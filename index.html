@@ -11,7 +11,49 @@
 
             $("#demo").text("Hello jQuery!");
             $("#box").css("background-color", "lightblue");
-            
+            $("#btn").click(function(){
+                $("#demo").hide();
+                });
+            $("#btn").click(function(){
+                $("#demo").show();
+                });
+            $("#btn").click(function(){
+                $("#demo").toggle();
+                });
+            $("#demo").addClass("highlight");
+            $("#demo").removeClass("highlight");
+            $("#myImg").attr("src", "new.jpg");
+            let val = $("#name").val();
+            console.log(val);
+            $("#name").val("John Doe");
+            $("#demo").append(" Extra text!");
+            $("#demo").prepend("Start ");
+            $("#box").fadeOut();
+            $("#box").fadeIn();
+            $("#panel").slideUp();
+            $("#panel").slideDown();
+
+            $("#demo").css({
+            "color": "white",
+            "background-color": "black"
+            });
+
+            $("#demo").mouseover(function(){
+            $(this).css("color", "red");
+            });
+
+            $("#demo").click(function(){
+            $(this).text("You clicked me!");
+            });
+
+
+
+
+
+
+
+
+
 
 });
 
@@ -24,6 +66,28 @@
             <p id = "demo"> Hey </p>
     </div>
 
+    <p id = "demo">
+        Don't hide meeeee
+    </p>
+    <button id = "btn"> The Button </button>
+
+    <img src = "img.jpg" alt = "image" id = "myIMG">
+
+    <input type="text" name="username" id = "name">
+
+    <div id = "panel">
+        <p> Hi </p>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
     
 </body>
 </html>
